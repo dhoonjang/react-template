@@ -8,6 +8,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
+    'prettier',
+    'plugin:prettier/recommended',
     'plugin:tailwindcss/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs', 'scripts'],
@@ -20,6 +22,10 @@ module.exports = {
   },
   plugins: ['react-refresh', 'sort-exports', 'import'],
   rules: {
+    'prettier/prettier': ['warn', {
+      singleQuote: true,
+      trailingComma: 'es5'
+    }],
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
