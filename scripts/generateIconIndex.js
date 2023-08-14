@@ -1,7 +1,6 @@
 import { readdirSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 
-// eslint-disable-next-line no-undef
 const currentDir = process.cwd();
 
 const fileNames = readdirSync(resolve(currentDir, './src/assets/icons'));
